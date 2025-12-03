@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # ===========================================
+  # ReclamaAI API
+  # ===========================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reclamai-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - reclamai-network
+
+  # ===========================================
+  # Cosmos DB Emulator (opcional para dev local)
+  # ===========================================
+  # Descomente se quiser usar o emulador local
+  # cosmos-emulator:
+  #   image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:latest
+  #   container_name: cosmos-emulator
+  #   ports:
+  #     - "8081:8081"
+  #     - "10251:10251"
+  #     - "10252:10252"
+  #     - "10253:10253"
+  #     - "10254:10254"
+  #   environment:
+  #     - AZURE_COSMOS_EMULATOR_PARTITION_COUNT=10
+  #     - AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE=true
+  #   volumes:
+  #     - cosmos-data:/tmp/cosmos
+  #   networks:
+  #     - reclamai-network
+
+networks:
+  reclamai-network:
+    driver: bridge
+
+volumes:
+  cosmos-data:

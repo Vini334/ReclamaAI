@@ -1,0 +1,195 @@
+{
+  "company": "TechNova Store",
+  "teams": [
+    {
+      "id": "team-logistica",
+      "name": "Time de Logística",
+      "email": "logistica@technova.com",
+      "manager": "Carlos Eduardo",
+      "description": "Responsável por toda a operação de entregas, rastreamento de pedidos, gestão de transportadoras e resolução de problemas de extravio.",
+      "responsibilities": [
+        "Acompanhamento de entregas atrasadas",
+        "Investigação de extravios",
+        "Contato com transportadoras",
+        "Rastreamento de pedidos",
+        "Reagendamento de entregas",
+        "Problemas com endereço de entrega"
+      ],
+      "categories": [
+        "Atraso na entrega",
+        "Produto não entregue"
+      ],
+      "sla_hours": {
+        "baixa": 72,
+        "media": 48,
+        "alta": 24,
+        "critica": 4
+      },
+      "example_cases": [
+        "Pedido não chegou após 15 dias",
+        "Rastreamento parado há uma semana",
+        "Entrega feita no endereço errado",
+        "Transportadora não encontra endereço",
+        "Produto extraviado em trânsito"
+      ]
+    },
+    {
+      "id": "team-financeiro",
+      "name": "Time Financeiro",
+      "email": "financeiro@technova.com",
+      "manager": "Ana Paula",
+      "description": "Responsável por cobranças, estornos, reembolsos, contestações de cartão e problemas de pagamento.",
+      "responsibilities": [
+        "Processamento de reembolsos",
+        "Estorno de cobranças duplicadas",
+        "Análise de fraudes",
+        "Contestações de cartão",
+        "Problemas com Pix",
+        "Cashback não creditado"
+      ],
+      "categories": [
+        "Cobrança indevida",
+        "Reembolso não processado"
+      ],
+      "sla_hours": {
+        "baixa": 48,
+        "media": 24,
+        "alta": 8,
+        "critica": 2
+      },
+      "example_cases": [
+        "Cobrança duplicada no cartão",
+        "Reembolso não processado há 30 dias",
+        "Pix não confirmado pelo sistema",
+        "Cashback prometido não creditado",
+        "Fraude no cartão de crédito"
+      ]
+    },
+    {
+      "id": "team-produtos",
+      "name": "Time de Produtos",
+      "email": "produtos@technova.com",
+      "manager": "Roberto Silva",
+      "description": "Responsável por problemas com produtos, defeitos, garantias, trocas e devoluções por qualidade.",
+      "responsibilities": [
+        "Análise de defeitos",
+        "Acionamento de garantia",
+        "Autorização de trocas",
+        "Coleta de produtos defeituosos",
+        "Contato com fabricantes",
+        "Laudos técnicos"
+      ],
+      "categories": [
+        "Produto com defeito",
+        "Produto diferente do anunciado"
+      ],
+      "sla_hours": {
+        "baixa": 72,
+        "media": 48,
+        "alta": 24,
+        "critica": 8
+      },
+      "example_cases": [
+        "Produto chegou quebrado",
+        "Celular parou de funcionar após 1 mês",
+        "Cor do produto diferente do anúncio",
+        "Produto falsificado",
+        "Produto usado vendido como novo",
+        "Faltando acessórios na caixa"
+      ]
+    },
+    {
+      "id": "team-atendimento-n2",
+      "name": "Atendimento Nível 2",
+      "email": "n2@technova.com",
+      "manager": "Fernanda Costa",
+      "description": "Time de escalação para casos complexos, clientes VIP, ameaças de processo e situações que o N1 não conseguiu resolver.",
+      "responsibilities": [
+        "Casos escalados do N1",
+        "Clientes com múltiplas reclamações",
+        "Ameaças de PROCON/processo",
+        "Compensações e vouchers",
+        "Negociações especiais",
+        "Casos de mídia/redes sociais"
+      ],
+      "categories": [
+        "Atendimento ruim",
+        "Cancelamento negado",
+        "Dificuldade de contato"
+      ],
+      "sla_hours": {
+        "baixa": 48,
+        "media": 24,
+        "alta": 8,
+        "critica": 2
+      },
+      "example_cases": [
+        "Cliente insatisfeito com atendimento anterior",
+        "Cancelamento negado indevidamente",
+        "Cliente ameaça ir ao PROCON",
+        "Reclamação viral em rede social",
+        "Cliente VIP insatisfeito",
+        "Múltiplas tentativas de contato sem sucesso"
+      ]
+    },
+    {
+      "id": "team-marketplace",
+      "name": "Time Marketplace",
+      "email": "marketplace@technova.com",
+      "manager": "Lucas Mendes",
+      "description": "Responsável por problemas com vendedores terceiros, mediação de conflitos e garantia de qualidade do marketplace.",
+      "responsibilities": [
+        "Mediação vendedor-cliente",
+        "Investigação de vendedores",
+        "Bloqueio de vendedores problemáticos",
+        "Reembolsos por falha de vendedor",
+        "Qualidade dos anúncios",
+        "Garantia marketplace"
+      ],
+      "categories": [
+        "Problema com vendedor (marketplace)"
+      ],
+      "sla_hours": {
+        "baixa": 72,
+        "media": 48,
+        "alta": 24,
+        "critica": 8
+      },
+      "example_cases": [
+        "Vendedor não responde há 15 dias",
+        "Produto de vendedor nunca chegou",
+        "Vendedor enviou produto errado",
+        "Vendedor sumiu após pagamento",
+        "Anúncio enganoso de vendedor",
+        "Vendedor recusa devolução"
+      ]
+    }
+  ],
+  "routing_rules": [
+    {
+      "priority": 1,
+      "condition": "Menção a PROCON, processo, advogado ou justiça",
+      "action": "Escalar para Atendimento N2 com urgência CRÍTICA"
+    },
+    {
+      "priority": 2,
+      "condition": "Fraude ou clonagem de cartão",
+      "action": "Escalar para Financeiro com urgência CRÍTICA"
+    },
+    {
+      "priority": 3,
+      "condition": "Risco à saúde (produto vencido, contaminado)",
+      "action": "Escalar para Produtos com urgência CRÍTICA"
+    },
+    {
+      "priority": 4,
+      "condition": "Vendedor do marketplace envolvido",
+      "action": "Direcionar para Time Marketplace"
+    },
+    {
+      "priority": 5,
+      "condition": "Problema de entrega sem defeito no produto",
+      "action": "Direcionar para Logística"
+    }
+  ]
+}

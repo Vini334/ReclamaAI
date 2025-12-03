@@ -1,0 +1,209 @@
+{
+  "project": {
+    "key": "SUPORTE",
+    "name": "Suporte TechNova",
+    "lead": "gerente.suporte@technova.com"
+  },
+  "issues": [
+    {
+      "external_id": "SUPORTE-101",
+      "title": "Cliente reclama de demora na entrega - pedido 45123",
+      "description": "Cliente João Silva entrou em contato informando que seu pedido 45123 está atrasado há 8 dias. Prazo prometido era de 5 dias úteis. Cliente está irritado e ameaça cancelar.",
+      "reporter": "atendente.maria@technova.com",
+      "created_at": "2025-11-10T09:00:00Z",
+      "priority": "High",
+      "status": "Open",
+      "labels": ["entrega", "atraso", "urgente"]
+    },
+    {
+      "external_id": "SUPORTE-102",
+      "title": "Solicitação de reembolso - produto com defeito",
+      "description": "Cliente Ana Costa solicita reembolso de R$ 1.299 referente a um notebook que apresentou defeito na tela após 15 dias de uso. Produto já foi devolvido, aguardando análise técnica.",
+      "reporter": "atendente.pedro@technova.com",
+      "created_at": "2025-11-09T14:30:00Z",
+      "priority": "Medium",
+      "status": "In Progress",
+      "labels": ["reembolso", "defeito", "notebook"]
+    },
+    {
+      "external_id": "SUPORTE-103",
+      "title": "Reclamação de cobrança indevida - cartão duplicado",
+      "description": "Cliente Carlos Mendes relata cobrança duplicada de R$ 459,90 no cartão. Compra realizada em 01/11, duas cobranças aparecem na fatura. Solicita estorno urgente.",
+      "reporter": "atendente.julia@technova.com",
+      "created_at": "2025-11-11T11:00:00Z",
+      "priority": "High",
+      "status": "Open",
+      "labels": ["financeiro", "cobrança", "estorno"]
+    },
+    {
+      "external_id": "SUPORTE-104",
+      "title": "Troca de produto - tamanho incorreto",
+      "description": "Cliente Mariana Oliveira recebeu camiseta tamanho G quando pediu M. Solicita troca sem custo adicional. Produto em perfeito estado.",
+      "reporter": "atendente.lucas@technova.com",
+      "created_at": "2025-11-12T10:15:00Z",
+      "priority": "Low",
+      "status": "Open",
+      "labels": ["troca", "tamanho", "vestuário"]
+    },
+    {
+      "external_id": "SUPORTE-105",
+      "title": "Produto não recebido - status mostra entregue",
+      "description": "Cliente Roberto Alves informa que pedido 47890 não foi recebido, porém status no sistema mostra como entregue. Cliente suspeita de roubo/extravio. Precisa de investigação urgente.",
+      "reporter": "atendente.fernanda@technova.com",
+      "created_at": "2025-11-08T16:45:00Z",
+      "priority": "Critical",
+      "status": "Open",
+      "labels": ["entrega", "extravio", "investigação"]
+    },
+    {
+      "external_id": "SUPORTE-106",
+      "title": "Garantia - TV parou de funcionar",
+      "description": "Cliente Patrícia Lima relata que TV Samsung 55' comprada há 6 meses parou de ligar. Dentro do período de garantia. Solicita reparo ou troca.",
+      "reporter": "atendente.thiago@technova.com",
+      "created_at": "2025-11-10T13:20:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["garantia", "TV", "defeito"]
+    },
+    {
+      "external_id": "SUPORTE-107",
+      "title": "Cancelamento negado - cliente insatisfeito",
+      "description": "Cliente Fernando Santos tentou cancelar pedido 48234 mas foi informado que não seria possível pois já estava em separação. Cliente alega que tentou em menos de 2 horas após a compra.",
+      "reporter": "atendente.amanda@technova.com",
+      "created_at": "2025-11-11T08:30:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["cancelamento", "insatisfação"]
+    },
+    {
+      "external_id": "SUPORTE-108",
+      "title": "Problema com vendedor marketplace - sem resposta",
+      "description": "Cliente Juliana Ferreira comprou de vendedor 'TechImports' há 25 dias e não recebeu produto. Vendedor não responde mensagens. Cliente quer reembolso da TechNova.",
+      "reporter": "atendente.rafael@technova.com",
+      "created_at": "2025-11-06T15:00:00Z",
+      "priority": "High",
+      "status": "In Progress",
+      "labels": ["marketplace", "vendedor", "reembolso"]
+    },
+    {
+      "external_id": "SUPORTE-109",
+      "title": "Frete expresso não cumprido",
+      "description": "Cliente Bruno Nascimento pagou R$ 49,90 por frete expresso (2 dias) mas recebeu apenas após 7 dias. Solicita reembolso do valor do frete.",
+      "reporter": "atendente.camila@technova.com",
+      "created_at": "2025-11-09T09:45:00Z",
+      "priority": "Low",
+      "status": "Open",
+      "labels": ["frete", "reembolso"]
+    },
+    {
+      "external_id": "SUPORTE-110",
+      "title": "Produto diferente do anunciado - foto não corresponde",
+      "description": "Cliente Ricardo Gomes recebeu cadeira de escritório diferente da mostrada no site. Cor é diferente e material parece inferior. Solicita devolução completa.",
+      "reporter": "atendente.bianca@technova.com",
+      "created_at": "2025-11-12T14:00:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["produto-errado", "devolução", "móveis"]
+    },
+    {
+      "external_id": "SUPORTE-111",
+      "title": "Nota fiscal não emitida há 30 dias",
+      "description": "Cliente empresa ACME Ltda solicita nota fiscal da compra realizada há 30 dias. Necessário para contabilidade. Já solicitou 3 vezes sem sucesso.",
+      "reporter": "atendente.diego@technova.com",
+      "created_at": "2025-11-07T10:30:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["nota-fiscal", "empresa", "urgente"]
+    },
+    {
+      "external_id": "SUPORTE-112",
+      "title": "Cashback não creditado após 15 dias",
+      "description": "Cliente Larissa Souza participou de promoção com 15% de cashback. Compra de R$ 800 deveria render R$ 120 de cashback. Prazo de 7 dias já passou.",
+      "reporter": "atendente.gustavo@technova.com",
+      "created_at": "2025-11-10T16:00:00Z",
+      "priority": "Low",
+      "status": "Open",
+      "labels": ["cashback", "promoção"]
+    },
+    {
+      "external_id": "SUPORTE-113",
+      "title": "Produto chegou quebrado - vidro estilhaçado",
+      "description": "Cliente Aline Martins recebeu espelho decorativo completamente quebrado. Embalagem estava intacta por fora mas produto veio em pedaços. Risco de segurança.",
+      "reporter": "atendente.henrique@technova.com",
+      "created_at": "2025-11-11T11:30:00Z",
+      "priority": "High",
+      "status": "Open",
+      "labels": ["quebrado", "transporte", "perigo"]
+    },
+    {
+      "external_id": "SUPORTE-114",
+      "title": "Atendimento via chat - espera de 3 horas",
+      "description": "Cliente Marcos Pereira reclama que ficou 3 horas na fila do chat para resolver problema simples de alteração de endereço. Quando foi atendido, chat caiu.",
+      "reporter": "supervisor.suporte@technova.com",
+      "created_at": "2025-11-13T09:00:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["atendimento", "chat", "qualidade"]
+    },
+    {
+      "external_id": "SUPORTE-115",
+      "title": "Cupom expirado usado em promoção anterior",
+      "description": "Cliente Tatiana Rocha alega que cupom 'TECH20' que usou mostrava válido no site mas não foi aplicado. Diferença de R$ 180 no pedido.",
+      "reporter": "atendente.paula@technova.com",
+      "created_at": "2025-11-12T15:45:00Z",
+      "priority": "Low",
+      "status": "Open",
+      "labels": ["cupom", "desconto", "sistema"]
+    },
+    {
+      "external_id": "SUPORTE-116",
+      "title": "Assistência técnica - sem peças de reposição",
+      "description": "Cliente Eduardo Campos enviou celular para assistência há 45 dias. Informado que não há peças de reposição. Aguardando definição sobre troca ou reembolso.",
+      "reporter": "atendente.vanessa@technova.com",
+      "created_at": "2025-11-05T14:20:00Z",
+      "priority": "High",
+      "status": "In Progress",
+      "labels": ["assistência", "celular", "peças"]
+    },
+    {
+      "external_id": "SUPORTE-117",
+      "title": "Pix não confirmado - pagamento há 3 dias",
+      "description": "Cliente Gabriel Dias fez pagamento via Pix de R$ 2.340 há 3 dias úteis. Status permanece como 'aguardando pagamento'. Tem comprovante bancário.",
+      "reporter": "atendente.cristina@technova.com",
+      "created_at": "2025-11-11T10:00:00Z",
+      "priority": "High",
+      "status": "Open",
+      "labels": ["pix", "pagamento", "sistema"]
+    },
+    {
+      "external_id": "SUPORTE-118",
+      "title": "Produto usado recebido - embalagem violada",
+      "description": "Cliente Renata Barbosa recebeu fone de ouvido com sinais claros de uso. Cabo estava enrolado diferente, manchas de gordura nas almofadas. Produto deveria ser novo.",
+      "reporter": "atendente.roberto@technova.com",
+      "created_at": "2025-11-09T12:00:00Z",
+      "priority": "High",
+      "status": "Open",
+      "labels": ["usado", "fraude", "troca"]
+    },
+    {
+      "external_id": "SUPORTE-119",
+      "title": "Entrega em endereço antigo - não atualizado",
+      "description": "Cliente Fabiana Torres atualizou endereço antes do envio mas produto foi para endereço antigo. Precisa recuperar produto ou reenviar.",
+      "reporter": "atendente.lucas@technova.com",
+      "created_at": "2025-11-10T17:30:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["endereço", "entrega", "erro-sistema"]
+    },
+    {
+      "external_id": "SUPORTE-120",
+      "title": "Voltagem errada - produto 110V enviado para 220V",
+      "description": "Cliente Sergio Moura recebeu liquidificador 110V mas mora em região 220V. Anúncio não especificava voltagem. Precisa de troca.",
+      "reporter": "atendente.amanda@technova.com",
+      "created_at": "2025-11-08T08:45:00Z",
+      "priority": "Medium",
+      "status": "Open",
+      "labels": ["voltagem", "troca", "eletrodoméstico"]
+    }
+  ]
+}
