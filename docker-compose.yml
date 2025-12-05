@@ -30,6 +30,35 @@ services:
       - reclamai-network
 
   # ===========================================
+  # LangGraph Studio Server
+  # ===========================================
+  langgraph-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile.langgraph
+    container_name: reclamai-langgraph
+    ports:
+      - "8123:8123"
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+      - PYTHONPATH=/app
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./langgraph.json:/app/langgraph.json
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8123/ok"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      - reclamai-network
+
+  # ===========================================
   # Cosmos DB Emulator (opcional para dev local)
   # ===========================================
   # Descomente se quiser usar o emulador local

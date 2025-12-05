@@ -1,0 +1,10 @@
+{
+  "graphs": {
+    "complaint_workflow": {
+      "path": "src.graphs.complaint_graph:graph"
+    }
+  },
+  "env": ".env",
+  "python_version": "3.11",
+  "dependencies": ["./"]
+}
